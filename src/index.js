@@ -3,9 +3,8 @@ const express = require("express");
 const { Server } = require("socket.io");
 const http = require("http");
 const cors = require("cors");
-const Redis = require("ioredis");
+const redisCache = require("./config/redisConfig");
 
-const redisCache = new Redis();
 console.log("Redis cache initialized.");
 
 const app = express();
